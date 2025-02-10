@@ -5,3 +5,8 @@ spring:
     url: r2dbc:postgresql://localhost:5432/parking-lot
     username: guest
     password: guest
+  flyway:
+    url: jdbc:postgresql://localhost:5432/parking-lot
+    user: ${spring.r2dbc.username}
+    password: ${spring.r2dbc.password}
+    validateMigrationNaming: true

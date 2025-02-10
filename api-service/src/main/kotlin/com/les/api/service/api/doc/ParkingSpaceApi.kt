@@ -14,6 +14,11 @@ import org.springframework.web.bind.annotation.RequestMapping
 interface ParkingSpaceApi {
 
     @GetMapping(
+        produces = [APPLICATION_JSON_VALUE, APPLICATION_NDJSON_VALUE, TEXT_EVENT_STREAM_VALUE]
+    )
+    fun findAll() : Flow<ParkingSpace>
+
+    @GetMapping(
         path = ["/floorNumber/{floorNumber}"],
         produces = [APPLICATION_JSON_VALUE, APPLICATION_NDJSON_VALUE, TEXT_EVENT_STREAM_VALUE]
     )
