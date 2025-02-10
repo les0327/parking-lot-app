@@ -4,9 +4,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-open class App
+class ApiServiceApplication
 
 fun main(args: Array<String>) {
-    runApplication<App>(*args)
+    runApplication<ApiServiceApplication>(*args)
 }
 

@@ -1,5 +1,4 @@
 plugins {
-
     id("buildsrc.convention.kotlin-jvm")
 
     alias(libs.plugins.kotlinPluginSerialization)
@@ -7,5 +6,4 @@ plugins {
 
 dependencies {
     implementation(libs.bundles.kotlinxEcosystem)
-    testImplementation(kotlin("test"))
 }

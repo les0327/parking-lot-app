@@ -1,3 +1,7 @@
 spring:
   application:
     name: parking-lot-api-service
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/parking-lot
+    username: guest
+    password: guest

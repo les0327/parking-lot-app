@@ -10,6 +10,6 @@ plugins {
 }
 
 include(":api-service")
-include(":utils")
+include(":model")
 
 rootProject.name = "parking-lot-app"
